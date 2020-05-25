@@ -120,3 +120,14 @@
   margin-left: .75rem;
 }
 /*End Marketing*/
+
+/*top link icons style*/
+.top-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+/*end link icons style*/
