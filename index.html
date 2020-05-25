@@ -17,9 +17,9 @@
     <!--Header Section-->
     <section>
         <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light border-bottom px-0">
+            <nav class="navbar navbar-expand navbar-light border-bottom px-0">
                 <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto d-none d-md-block">
                         <li class="nav-item disabled">
                             <a class="nav-link py-0 d-flex justify-content-center align-items-center" style="font-size:13px;">
                                 <ion-icon name="mail-outline" class="mr-2" style="font-size: 16px;"></ion-icon> amanqairbay@gmail.com
@@ -31,7 +31,7 @@
                             <a class="nav-link py-0 px-3 border-right d-flex justify-content-center align-items-center" href="#"
                                 style="font-size:13px;">
                                 <ion-icon name="heart-outline" class="mr-1" style="font-size: 16px;"></ion-icon>
-                                Wishlist
+                                <span class="d-none d-md-block">Wishlist</span>
                                 <span class="text-danger ml-1">(0)</span>
                             </a>
                         </li>
@@ -39,7 +39,7 @@
                             <a class="nav-link py-0 px-3 border-right d-flex justify-content-center align-items-center" href="#"
                                 style="font-size:13px;">
                                 <ion-icon name="basket-outline" class="mr-1" style="font-size: 16px;"></ion-icon>
-                                Cart
+                                <span class="d-none d-md-block">Cart</span>
                                 <span class="text-danger ml-1">(0)</span>
                             </a>
                         </li>
@@ -66,17 +66,17 @@
 
     <!--Search Bar Section-->
     <section>
-        <div class="container py-4">
-            <nav class="navbar navbar-expand-md navbar-light px-0">
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-light px-0 py-5">
                 <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav col-3">
+                    <ul class="navbar-nav d-none d-md-block col-md-3">
                         <li class="nav-item disabled">
                             <a class="nav-link py-0 d-flex justify-content-center align-items-center" href="#" style="font-size:13px;">
-                                Brand
+                                
                             </a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav col-6">
+                    <ul class="navbar-nav col-md-6">
                         <li class="nav-item col-12">
                             <form>
                                 <div class="form-row">
@@ -96,7 +96,7 @@
                             </form>
                         </li>
                     </ul>
-                    <ul class="navbar-nav col-3">
+                    <ul class="navbar-nav d-none d-md-block col-md-3">
                         <li class="nav-item ml-auto mr-2">
                             <a class="nav-link py-0 d-flex justify-content-center align-items-center" href="#" style="font-size:20px;">
                                 
@@ -122,7 +122,7 @@
     <!--Menu Section-->
     <section>
         <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light border-top border-bottom">
+            <nav class="navbar navbar-expand navbar-light border-top border-bottom">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto ml-auto py-2">
                         <li class="nav-item px-4 dropdown">
@@ -137,16 +137,16 @@
                                 <a class="dropdown-item" style="font-size:15px;" href="categories.html">Dessert</a>
                             </div>
                         </li>
-                        <li class="nav-item px-4">
+                        <li class="nav-item d-none d-md-block px-4">
                             <a class="nav-link py-0" style="font-size: 15px;" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item px-4">
+                        <li class="nav-item d-none d-md-block px-4">
                             <a class="nav-link py-0" style="font-size: 15px;" href="#">About</a>
                         </li>
-                        <li class="nav-item px-4">
+                        <li class="nav-item d-none d-md-block px-4">
                             <a class="nav-link py-0" style="font-size: 15px;" href="#">Contact</a>
                         </li>
-                        <li class="nav-item px-4">
+                        <li class="nav-item d-none d-md-block px-4">
                             <a class="nav-link py-0" style="font-size: 15px;" href="#">Blog</a>
                         </li>
                     </ul>
@@ -156,7 +156,7 @@
     </section>
     <!--End Menu Section-->
 
-    <!--Main Carousel & Mini Banners Section-->
+    <!--Main Carousel Section-->
     <section class="my-3">
         <!--Carousel Container-->
         <div class="container">
@@ -195,15 +195,15 @@
         </div><!--container-->
         <!--End Carousel Container-->
     </section>
-    <!--End Main Carousel & Mini Banners Section-->
+    <!--End Main Carousel Section-->
 
     <!--About Project Section-->
-    <section class="text-center my-5">
+    <section class="text-center my-5 d-none d-md-block">
         <div class="container">
             <div class="jumbotron" style="border-radius: 0;">
-                <h2>About project</h2>
+                <h2>About the project</h2>
             <p class="lead text-muted">This project is a simple ecommerce starter web project on Asp.Net Core MVC 3.1 and Entity Framework Core 3.1. You
-                can view the code or download it from the links below.
+                can view the source code or download it from the links below.
             </p>
             <p>
                 <a href="#" class="btn btn-primary shadow-none my-2">Download now</a>
@@ -218,36 +218,30 @@
 
     <!--Menu Banners Section-->
     <section>
-        <div class="container my-4">
+        <div class="container">
 
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div>
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="./images/304x200_01.jpg" alt="">
-                            <div class="overlay">
-                                <a class="info" href="#">Food</a>
-                            </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 mb-2">
+                    <div class="hovereffect">
+                        <img class="d-block w-100" src="./images/304x200_01.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="#">Food</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div>
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="./images/304x200_02.jpg" alt="">
-                            <div class="overlay">
-                                <a class="info" href="#">Drink</a>
-                            </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 mb-2">
+                    <div class="hovereffect">
+                        <img class="d-block w-100" src="./images/304x200_02.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="#">Drink</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div>
-                        <div class="hovereffect">
-                            <img class="img-responsive" src="./images/304x200_03.jpg" alt="">
-                            <div class="overlay">
-                                <a class="info" href="#">Ice cream</a>
-                            </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 mb-2">
+                    <div class="hovereffect">
+                        <img class="d-block w-100" src="./images/304x200_03.jpg" alt="">
+                        <div class="overlay">
+                            <a class="info" href="#">Ice cream</a>
                         </div>
                     </div>
                 </div>
@@ -256,32 +250,33 @@
     </section>
     <!--End Menu Banners Section-->
 
-    <section class="my-5">
+    <section class="my-4">
         <div class="container marketing">
             <div class="dropdown-divider mb-3"></div>
             <div class="row">
-                <div class="col-lg-4">
-                    <h2>Food</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                <div class="col-md-4 text-center">
+                    <h3 style="color: #313131;">Food</h3>
+                    <p style="color: #555555;">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
                         vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
                         cursus magna.</p>
                     <p><a class="btn btn-secondary shadow-none" href="#" role="button" style="border-radius: 0;">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <h2>Drink</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-4 text-center">
+                    <h3 style="color: #313131;">Drink</h3>
+                    <p style="color: #555555;">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
                         vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
                         cursus magna.</p>
                     <p><a class="btn btn-secondary shadow-none" href="#" role="button" style="border-radius: 0;">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <h2>Ice Cream</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+                </div><!-- /.col-md-4 -->
+                <div class="col-md-4 text-center">
+                    <h3 style="color: #313131;">Ice Cream</h3>
+                    <p style="color: #555555;">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
                         vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
                         cursus magna.</p>
                     <p><a class="btn btn-secondary shadow-none" href="#" role="button" style="border-radius: 0;">View details &raquo;</a></p>
-                </div><!-- /.col-lg-4 -->
+                </div><!-- /.col-md-4 -->
             </div><!-- /.row -->
+            <div class="dropdown-divider mb-3"></div>
         </div>
     </section>
 
@@ -297,24 +292,24 @@
                         <path
                             d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
                     </svg>
-                    <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                    <small class="d-block mb-3 text-muted">&copy; 2020</small>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Помощь</h5>
+                    <h5>Resources</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Как зарегистрироваться</a></li>
-                        <li><a class="text-muted" href="#">Как заказать товар</a></li>
-                        <li><a class="text-muted" href="#">Оплата товара</a></li>
-                        <li><a class="text-muted" href="#">Доставка</a></li>
+                        <li><a class="text-muted" href="#">Business</a></li>
+                        <li><a class="text-muted" href="#">Education</a></li>
+                        <li><a class="text-muted" href="#">Government</a></li>
+                        <li><a class="text-muted" href="#">Gaming</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h5>Категории продуктов</h5>
+                    <h5>Resources</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#">Еда</a></li>
-                        <li><a class="text-muted" href="#">Холодные напитки</a></li>
-                        <li><a class="text-muted" href="#">Горячие напитки</a></li>
-                        <li><a class="text-muted" href="#">Десерт</a></li>
+                        <li><a class="text-muted" href="#">Business</a></li>
+                        <li><a class="text-muted" href="#">Education</a></li>
+                        <li><a class="text-muted" href="#">Government</a></li>
+                        <li><a class="text-muted" href="#">Gaming</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-md">
